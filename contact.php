@@ -51,7 +51,7 @@
                 </a>
             </div>
             <div class="devintro">
-                <p>Check all of my other projects on</p>
+                <?php echo "<p>Check all of my other projects on</p>"; ?>
                 <div class="devlink">
                     <a href="https://devbase.netlify.app/"><i class="fas fa-code"></i>&nbsp;DevBase</a>
                 </div>

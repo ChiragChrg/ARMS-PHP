@@ -38,7 +38,11 @@
 
     <div class="intro">
         <pre>
-          <h2>Welcome to</h2>
+          <?php 
+            echo "<h2>Welcome to</h2>"; 
+            // Using PHP just because if a .php file does not have
+            // any PHP code, Github detects it as 'HACK' language.
+          ?> 
           <h1>Academic Resource Management System</h1>
           <h2>By SIMS CCIS</h2>
         </pre>

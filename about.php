@@ -38,7 +38,7 @@
 
     <div class="intro">
         <pre>
-          <h2>About</h2>
+          <?php echo "<h2>About</h2>"; ?>
           <h1>Academic Resource Management System</h1>
           <h2>By SIMS CCIS</h2>
         </pre>
