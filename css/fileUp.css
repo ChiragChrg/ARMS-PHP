@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+
+body {
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 8%;
+  background-color: dodgerblue;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.logo p {
+  font-size: 3rem;
+}
+
+.nav ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fff;
+}
+
+.signupAlert {
+  display: none;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  /* text-align: center; */
+  background-color: rgba(30, 143, 255, 0.6);
+  margin: 0 15%;
+  padding: 1%;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 40px;
+  row-gap: 40px;
+  padding: 2% 8%;
+  margin: 1%;
+}
+
+.info {
+  text-align: center;
+  padding: 2%;
+}
+
+.upbtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 4% 6%;
+  margin: 1%;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.upbtn input {
+  text-decoration: none;
+  background-color: dodgerblue;
+  font-size: 16px;
+  padding: 4%;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+
+.btn a {
+  color: #00acee;
+}
+
+footer {
+  /* border: 5px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 140, 255);
+  padding: 2%;
+  margin-top: -0.5%;
+}
+
+footer p {
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-align: center;
+  padding: 2% 0;
+  color: #fff;
+}

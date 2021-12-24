@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+
+*:focus {
+  outline: 1px solid rgba(151, 151, 151, 1);
+}
+
+body {
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 8%;
+  background-color: dodgerblue;
+  width: 100%;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.logo p {
+  font-size: 3rem;
+}
+
+.nav ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fff;
+}
+
+.signupAlert {
+  display: none;
+  margin: 10px;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  /* text-align: center; */
+  background-color: rgba(30, 143, 255, 0.5);
+  margin: 0 15%;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  padding: 5% 10%;
+}
+
+.teacherLogin,
+.studentLogin {
+  display: none;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.form {
+  padding: 20px 40px;
+  margin: 10px;
+}
+
+.form form {
+  padding: 30px 0;
+}
+
+.logUser,
+.logPass {
+  padding: 2px;
+}
+
+.logUser input,
+.logPass input {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.logSubmit {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.logSubmit:focus {
+  outline: none;
+}
+
+.remember {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remember p {
+  margin-bottom: 1px;
+}
+
+.signUp {
+  text-align: center;
+  padding: 20px;
+}
+
+.logSignup {
+  text-decoration: none;
+  color: dodgerblue;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.vector {
+  border-left: 1px solid rgb(221, 221, 221);
+}
+
+.lost {
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.goback {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.goback a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer {
+  /* border: 5px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 140, 255);
+  padding: 2%;
+  margin-top: -0.5%;
+}
+
+footer p {
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-align: center;
+  padding: 2% 0;
+  color: #fff;
+}

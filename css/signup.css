@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+
+*:focus {
+  outline: 1px solid rgba(151, 151, 151, 1);
+}
+
+body {
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 8%;
+  background-color: dodgerblue;
+  margin-bottom: 4%;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.logo p {
+  font-size: 3rem;
+}
+
+.nav ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fff;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signupAlert {
+  display: none;
+  margin: 10px;
+}
+
+.alert {
+  display: none;
+  background-color: rgba(248, 0, 0, 0.5);
+  padding: 10px;
+  margin: 10px;
+  width: 60%;
+  text-align: center;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.teacherSignup,
+.studentSignup {
+  border-radius: 15px;
+  /* background-color: rgb(153, 83, 83); */
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  width: 40%;
+}
+
+.signupS,
+.signupT {
+  padding: 2%;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: grey; */
+}
+
+.signupT h3,
+.signupS h3 {
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+/* .teacherForm,
+.studentForm {
+  text-align: center;
+} */
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  padding: 2%;
+}
+
+.TCflx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+
+.TCflx input {
+  margin-right: 15px;
+}
+
+.subReg {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.RegSubmitT,
+.RegSubmitS {
+  padding: 2% 4%;
+  background-color: grey;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: none;
+}
+
+.toLogin {
+  padding: 2%;
+  color: dodgerblue;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+select {
+  height: 35px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  /* border: 5px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 140, 255);
+  padding: 2%;
+  margin-top: 4%;
+}
+
+footer p {
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-align: center;
+  padding: 2% 0;
+  color: #fff;
+}

@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+}
+
+*:focus {
+  outline: 1px solid rgba(151, 151, 151, 1);
+}
+
+body {
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 8%;
+  background-color: dodgerblue;
+  width: 100%;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.logo p {
+  font-size: 3rem;
+}
+
+.nav ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #fff;
+}
+
+.signupAlert {
+  display: none;
+  margin: 10px;
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  /* text-align: center; */
+  background-color: rgba(30, 143, 255, 0.5);
+  margin: 0 15%;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  row-gap: 40px;
+  margin: 3%;
+  padding: 2%;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.subject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10% 0;
+  transition: 0.4s ease-in-out;
+  color: rgb(141, 153, 165);
+  outline: none;
+}
+
+.subject:hover {
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.35);
+  color: dodgerblue;
+}
+
+.subject p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer {
+  /* border: 5px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 140, 255);
+  padding: 2%;
+  margin-top: -0.5%;
+}
+
+footer p {
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-align: center;
+  padding: 2% 0;
+  color: #fff;
+}
