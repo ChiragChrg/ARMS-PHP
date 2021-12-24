@@ -61,10 +61,10 @@
                             <label>Password</label><br>
                             <input type="password" name="passwordT" placeholder="Enter atleast 6 characters" autocomplete="on" required>
                         </div>
-                        <div class="remember">
+                        <!-- <div class="remember">
                             <input type="checkbox" name="remember">
                             <label for="remember">&nbsp; Remember Me?</label>
-                        </div>
+                        </div> -->
                         <input type="submit" class="logSubmit" name="submitT" value="Login">
                     </form>
 
@@ -95,10 +95,10 @@
                             <label>Password</label><br>
                             <input type="password" name="passwordS" placeholder="Enter atleast 6 characters" autocomplete="on" required>
                         </div>
-                        <div class="remember">
+                        <!-- <div class="remember">
                             <input type="checkbox" name="remember">
                             <label for="remember">&nbsp; Remember Me?</labe>
-                        </div>
+                        </div> -->
                         <input type="submit" class="logSubmit" name="submitS" value="Login">
                     </form>
 
