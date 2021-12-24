@@ -1,10 +1,4 @@
 <?php
-    //000.webhost.com Database
-    // $dbServer = "localhost";
-    // $dbUser = "id18122207_chiragchrg";
-    // $dbPass = "ChrgChirag@4026";
-    // $dbname = "id18122207_arms";
-
     //Localhost Database
     $dbServer = "localhost";
     $dbUser = "root";
