@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $Username = $_SESSION['name'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +45,7 @@
     <div class="container" style="height: 60vh;">
     <?php
     // session_start();
-    echo "<p>Welcome, ".$_SESSION['name']."</p>";
+    echo "<p>Welcome, ".$Username."</p>";
     ?>
 
     <a href="./upload/index.php">Upload Files</a>

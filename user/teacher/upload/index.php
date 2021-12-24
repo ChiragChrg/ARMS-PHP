@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +17,8 @@
     />
     <script src="../../../js/icon.js" crossorigin="anonymous"></script>
     <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
-</head>
+    <script src="../../../js/upload.js"></script>
+  </head>
 <body>
     <header>
         <div class="header">
@@ -49,6 +53,7 @@
     </div>
 
     <script>
+      // Custom variables used as Parameters for Upload function to know which subject file is Uploaded
       var LAMP = "LAMP";
       var JAVA = "Ad.JAVA";
       var SE = "SE";
@@ -114,33 +119,23 @@
 
     <?php 
       //Check if upload is successful
-      if(isset($_GET['Upload'])){
-        if($_GET['Upload'] == 'Success'){
+      if(isset($_SESSION['UploadStatus'])){
+        $UploadStatus = $_SESSION['UploadStatus'];
+        if($UploadStatus == 'Success'){
           echo "<script>
-              var Alert = document.querySelector('.signupAlert');
-              var AlertText = document.querySelector('.alert');
-              Alert.style.display = 'block';
-              AlertText.innerHTML = 'File Uploaded Successfully';
-              </script>";
+              var upStat = '$UploadStatus';
+              uploadStatus(upStat);
+            </script>";
         }
-        else if($_GET['Upload'] == 'failed'){
+        else if($UploadStatus == 'Error'){
           echo "<script>
-              var Alert = document.querySelector('.signupAlert');
-              var AlertText = document.querySelector('.alert');
-              Alert.style.display = 'block';
-              AlertText.innerHTML = 'File Upload Failed';
-              </script>";
+              var upStat = '$UploadStatus';
+              uploadStatus(upStat);
+            </script>";
         }
       }
-
-      //Upload URL to Database
-      // if(isset($_GET['Url'])){
-      //   $dbURL = $_GET['Url'];
-      //   echo $dbURL;
-      // }
     ?>
 
-    <script src="../../../js/upload.js"></script>
     <!-- <script src="../dbUpload.php"></script> -->
 </body>
 </html>

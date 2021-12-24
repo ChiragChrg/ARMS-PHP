@@ -42,7 +42,6 @@
 
     <div class="container" style="height: 60vh;">
       <?php
-        // session_start();
         echo "<p>Welcome, ".$Username."</p>";
         echo "<p>Your Reg No is ".$RegNo."</p>";
       ?>

@@ -35,6 +35,20 @@ var storeUrl = (Url, Subject) => {
     DbSub;
 };
 
+//Display Upload status Alert
+uploadStatus = (status) => {
+  var Alert = document.querySelector('.signupAlert');
+  var AlertText = document.querySelector('.alert');
+  Alert.style.display = 'block';
+
+  if(status == "Success"){
+    AlertText.innerHTML = 'File Uploaded Successfully';
+  }
+  else if(status == "Error"){
+    AlertText.innerHTML = 'File Upload Failed';
+  }
+}
+
 //Google Drive Link fetching
 //(Too complicated to impelent with API and stuff So Dropped it)
 

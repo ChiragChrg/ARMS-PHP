@@ -61,13 +61,13 @@
                             <label>Password</label><br>
                             <input type="password" name="passwordT" placeholder="Enter atleast 6 characters" autocomplete="on" required>
                         </div>
+                        <div class="remember">
+                            <input type="checkbox" name="remember">
+                            <label for="remember">&nbsp; Remember Me?</label>
+                        </div>
                         <input type="submit" class="logSubmit" name="submitT" value="Login">
                     </form>
 
-                    <div class="remember">
-                        <input type="checkbox" name="remember" id="remember">
-                        <p>&nbsp; Remember Me?</p>
-                    </div>
 
                     <div class="signUp">
                         <p>Don't have an account yet ?</p>
@@ -95,13 +95,13 @@
                             <label>Password</label><br>
                             <input type="password" name="passwordS" placeholder="Enter atleast 6 characters" autocomplete="on" required>
                         </div>
+                        <div class="remember">
+                            <input type="checkbox" name="remember">
+                            <label for="remember">&nbsp; Remember Me?</labe>
+                        </div>
                         <input type="submit" class="logSubmit" name="submitS" value="Login">
                     </form>
 
-                    <div class="remember">
-                        <input type="checkbox" name="remember" id="remember">
-                        <p>&nbsp; Remember Me?</p>
-                    </div>
 
                     <div class="signUp">
                         <p>Don't have an account yet ?</p>
@@ -129,13 +129,14 @@
     </footer>
 
     <?php
+        //If Teacher was clicked in starting page, Teacher login is displayed else Student Login
         if(isset($LogUser)){
             if($LogUser == 'Teacher'){
                 echo "<script>
                     var usr = '$LogUser';
-                    setUser(usr);
+                    setUser(usr); 
                 </script>";
-
+                //setUser() function is defined in index.js file
             }
             else if($LogUser == 'Student'){
                 echo "<script>

@@ -56,35 +56,23 @@
 
       <div class="files">
           <h2>SE Files Download</h2>
-          <table border="0">
-            <!-- <th>
-                <tr>
-                    <td>File Name</td>
-                    <td>File Size</td>
-                </tr>
-            </th> -->
-
-            <?php 
+          <?php 
               $sql = "select * from docs where subject = 'SE';";
               $res = mysqli_query($con,$sql);
               while($row = mysqli_fetch_assoc($res)){
-                echo "<tr>";
-                echo "<td>".$row['name']."</td>";
-                echo "<td>".$row['size']."</td>";
-                // echo "<td>".$row['subject']."</td>";
-                ?>
-
-                <td>
-                    <a class="downbtn" href="<?php echo $row['url']?>">
-                        <i class="fad fa-cloud-download-alt"></i>&nbsp; Download
-                    </a>
-                </td>
-
-                <?php
-                echo "</tr>";
-                }
             ?>
-          </table>
+
+            <div class="row">
+              <div class="col"><?php echo $row['name']; ?></div>
+              <div class="col"><?php echo $row['size']; ?></div>
+              <a class="col downbtn" href="<?php echo $row['url']?>">
+                  <i class="fad fa-cloud-download-alt"></i>&nbsp; Download
+              </a>
+            </div>
+
+            <?php
+              }
+            ?>
         </div>
     </div>
 

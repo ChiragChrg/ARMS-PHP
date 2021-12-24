@@ -1,24 +1,23 @@
 <?php
     include('../../login/connect.php');
 
+    //Info sent from the Upload.js
     $fileId = $_GET['FID'];
     $fileUrl = $_GET['Url'];
     $fileName = $_GET['Name'];
-    $fileSizeBytes = ($_GET['Size']/1024);
-    $fileSizeNum = round($fileSizeBytes,0);
     $fileSubject = $_GET['Subject'];
 
+    //Converting the file size to KB
+    $fileSizeBytes = ($_GET['Size']/1024);
+    $fileSizeNum = round($fileSizeBytes,0);
+
+    //Converting the file size to MB if KB > 1000
     if($fileSizeNum >= 1000){
       $fileSize = round($fileSizeBytes/1024,2)." MB";
     }
     else{
       $fileSize = $fileSizeNum." KB";
     }
-    // echo $fileId."<br>";
-    // echo $fileUrl."<br>";
-    // echo $fileName."<br>";
-    // echo $fileSize."<br>";
-    // echo $fileSubject."<br>";
 
     $create = "create table if not exists docs(
         id varchar(100) not null primary key,
@@ -31,10 +30,15 @@
     $insert = "insert into docs values('$fileId','$fileUrl','$fileName','$fileSize','$fileSubject');";
     $result = mysqli_query($con,$insert);
 
+    session_start();
     if($result){
-        header('Location: ./upload/index.php?User=Teacher&Upload=Success');
+      $_SESSION['UploadStatus'] = "Success";
+        header('Location: ./upload/index.php');
+        // header('Location: ./upload/index.php?User=Teacher&Upload=Success');
     }
     else{
-        header('Location: ./upload/index.php?User=Teacher&Upload=Error');
+      $_SESSION['UploadStatus'] = "Error";
+        header('Location: ./upload/index.php?');
+        // header('Location: ./upload/index.php?User=Teacher&Upload=Error');
     }
 ?>

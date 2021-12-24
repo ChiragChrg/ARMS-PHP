@@ -56,35 +56,24 @@
 
       <div class="files">
           <h2>LAMP Files Download</h2>
-          <table border="0">
-            <!-- <th>
-                <tr>
-                    <td>File Name</td>
-                    <td>File Size</td>
-                </tr>
-            </th> -->
-
+              
             <?php 
               $sql = "select * from docs where subject = 'LAMP';";
               $res = mysqli_query($con,$sql);
               while($row = mysqli_fetch_assoc($res)){
-                echo "<tr>";
-                echo "<td>".$row['name']."</td>";
-                echo "<td>".$row['size']."</td>";
-                // echo "<td>".$row['subject']."</td>";
-                ?>
-
-                <td>
-                    <a class="downbtn" href="<?php echo $row['url']?>">
-                        <i class="fad fa-cloud-download-alt"></i>&nbsp; Download
-                    </a>
-                </td>
-
-                <?php
-                echo "</tr>";
-                }
+              //This part of HTML is looping within PHP While loop
             ?>
-          </table>
+            <div class="row">
+              <div class="col"><?php echo $row['name']; ?></div>
+              <div class="col"><?php echo $row['size']; ?></div>
+              <a class="col downbtn" href="<?php echo $row['url']?>">
+                  <i class="fad fa-cloud-download-alt"></i>&nbsp; Download
+              </a>
+            </div>
+
+            <?php
+              }
+            ?>
         </div>
     </div>
 
@@ -92,7 +81,7 @@
       <p>&#169; Copyright 2021 ChiragChrg</p>
     </footer>
 
-    <script src="../../../js/file.js"></script>
+    <!-- <script src="../../../js/file.js"></script> -->
     <!-- <script src="../../../js/upload.js"></script> -->
 </body>
 </html>

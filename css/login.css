@@ -145,12 +145,7 @@ body::-webkit-scrollbar {
 
 .remember {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.remember p {
-  margin-bottom: 1px;
 }
 
 .signUp {

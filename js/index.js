@@ -1,3 +1,4 @@
+//Initializing HTML elements to JS variables
 const TeacherLogin = document.getElementById("loginT");
 const StudentLogin = document.getElementById("loginS");
 const LogoT = document.querySelector(".logoT");
@@ -9,21 +10,7 @@ const RegSubmitT = document.querySelector(".RegSubmitT");
 const TCAgreeS = document.querySelector(".TCAgreeS");
 const RegSubmitS = document.querySelector(".RegSubmitS");
 
-// Switching Visibility of the Login form
-// var showFormT = () => {
-//   TeacherLogin.style.display = "block";
-//   StudentLogin.style.display = "none";
-//   LogoT.style.display = "none";
-//   LogoS.style.display = "block";
-// };
-
-// var showFormS = () => {
-//   StudentLogin.style.display = "block";
-//   TeacherLogin.style.display = "none";
-//   LogoT.style.display = "block";
-//   LogoS.style.display = "none";
-// };
-
+//if Teacher Passwords dont match, show Alert
 var matchPasswordT = () => {
   var passwordT = document.getElementById("passwordT").value;
   var ConfirmPasswordT = document.getElementById("confirmT").value;
@@ -37,7 +24,7 @@ var matchPasswordT = () => {
     Alert.innerHTML = "Passwords do not match. Please try again.";
   }
 };
-
+//if Student Passwords dont match, show Alert
 var matchPasswordS = () => {
   var passwordS = document.getElementById("passwordS").value;
   var ConfirmPasswordS = document.getElementById("confirmS").value;
@@ -52,6 +39,7 @@ var matchPasswordS = () => {
   }
 };
 
+//Terms and Conditions for Teacher, if not checked, disable the submit button
 var checkTCT = () => {
   if (TCAgreeT.checked) {
     RegSubmitT.disabled = false;
@@ -61,7 +49,7 @@ var checkTCT = () => {
     RegSubmitT.style.backgroundColor = "grey";
   }
 };
-
+//Terms and Conditions for Students, if not checked, disable the submit button
 var checkTCS = () => {
   if (TCAgreeS.checked) {
     RegSubmitS.style.backgroundColor = "dodgerblue";
@@ -72,7 +60,7 @@ var checkTCS = () => {
   }
 };
 
-//Set Login User as Teacher
+//Set Login page User as Teacher
 var setUser = (user) => {
   if (user === "Teacher") {
     document.querySelector(".teacherLogin").style.display = "block";
@@ -85,7 +73,7 @@ var setUser = (user) => {
   }
 };
 
-//Set Signup User as Teacher
+//Set Signup page User as Teacher
 var setSignup = (user) => {
   if (user === "Teacher") {
     document.querySelector(".teacherSignup").style.display = "block";
@@ -115,5 +103,5 @@ var setError = (error) => {
     AlertText.innerHTML = "Unable to Register User. Try again later.";
   }
 
-  setTimeout(() => (Alert.style.display = "none"), 3000);
+  setTimeout(() => (Alert.style.display = "none"), 3000); //Error disappears after 3 seconds
 };
