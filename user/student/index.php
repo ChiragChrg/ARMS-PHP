@@ -1,5 +1,7 @@
 <?php
     session_start();
+    $Username = $_SESSION['name'];
+    $RegNo = $_SESSION['regno'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,8 +43,8 @@
     <div class="container" style="height: 60vh;">
       <?php
         // session_start();
-        echo "<p>Welcome, ".$_SESSION['name']."</p>";
-        echo "<p>Your Reg No is ".$_SESSION['regno']."</p>";
+        echo "<p>Welcome, ".$Username."</p>";
+        echo "<p>Your Reg No is ".$RegNo."</p>";
       ?>
 
       <a href="./download/index.php">Downlaod Files</a>

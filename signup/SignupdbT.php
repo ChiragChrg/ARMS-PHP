@@ -20,6 +20,9 @@
     mysqli_query($con,$createTableT);
 
     if(isset($_POST['submitT'])){
+        session_start();
+        $_SESSION['User'] = "Teacher";
+
         $fName = $_POST['fNameT'];
         $lName = $_POST['lNameT'];
         $gender = $_POST['genderT'];
@@ -39,9 +42,14 @@
 
         $res = mysqli_query($con,$insertTable);
         if($res){
-            header('Location: ../login/index.php?User=Teacher&regSuccess=T');
+            $_SESSION['RegStatus'] = "SuccessT";
+            header('Location: ../login/index.php');
+            // header('Location: ../login/index.php?User=Teacher&regSuccess=T');
         }
-        else
-            header('Location: ./index.php?User=Teacher&Error=RegError');
+        else{
+            $_SESSION['Error'] = "RegError";
+            header('Location: ./index.php');
+            // header('Location: ./index.php?User=Teacher&Error=RegError');
+        }
     }
 ?>

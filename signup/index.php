@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+    $SignUser = $_SESSION['User'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -203,29 +207,29 @@
     </footer>
 
     <?php
-        if(isset($_GET['User'])){
-            if($_GET['User'] == 'Teacher'){
-                echo '<script>
-                    document.querySelector(".teacherSignup").style.display = "block";
-                    document.querySelector(".studentSignup").style.display = "none";
-                </script>';
+        if(isset($SignUser)){
+            if($SignUser == 'Teacher'){
+                echo "<script>
+                    var usr = '$SignUser';
+                    setSignup(usr);
+                </script>";
             }
-            else{
-                echo '<script>
-                    document.querySelector(".studentSignup").style.display = "block";
-                    document.querySelector(".teacherSignup").style.display = "none";
-                </script>';
+            else if($SignUser == 'Student'){
+                echo "<script>
+                var usr = '$SignUser';
+                setSignup(usr);
+            </script>";
             }
         }
 
         //Error during Registration
-        if(isset($_GET['Error'])){
-            if($_GET['Error'] == "RegError"){
+        if(isset($_SESSION['Error'])){
+            $LogError = $_SESSION['Error'];
+            
+            if($LogError == "RegError"){
                 echo "<script>
-                // var Alert = document.querySelector('.signupAlert');
-                var AlertText = document.querySelector('.alert');
-                AlertText.style.display = 'block';
-                AlertText.innerHTML = 'Fill all the Required Fields Correctly';
+                    var err = '$LogError';
+                    setError(err);
                 </script>";
             }
         }

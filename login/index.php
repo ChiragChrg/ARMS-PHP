@@ -1,7 +1,6 @@
 <?php 
     session_start();
     $LogUser = $_SESSION['User'];
-    $LogError = $_SESSION['Error'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,7 +71,7 @@
 
                     <div class="signUp">
                         <p>Don't have an account yet ?</p>
-                        <a href="../signup/index.php?User=Teacher" class="logSignup">SignUp</a>
+                        <a href="../signup/index.php" class="logSignup">SignUp</a>
                     </div>
                 </div>
 
@@ -106,7 +105,7 @@
 
                     <div class="signUp">
                         <p>Don't have an account yet ?</p>
-                        <a href="../signup/index.php?User=Student" class="logSignup">SignUp</a>
+                        <a href="../signup/index.php" class="logSignup">SignUp</a>
                     </div>
                 </div>
 
@@ -132,26 +131,27 @@
     <?php
         if(isset($LogUser)){
             if($LogUser == 'Teacher'){
-                echo '<script>
-                    document.querySelector(".teacherLogin").style.display = "block";
-                    document.querySelector(".studentLogin").style.display = "none";
-                    document.querySelector(".lost").style.display = "none";
-                </script>';
+                echo "<script>
+                    var usr = '$LogUser';
+                    setUser(usr);
+                </script>";
+
             }
             else if($LogUser == 'Student'){
-                echo '<script>
-                    document.querySelector(".studentLogin").style.display = "block";
-                    document.querySelector(".teacherLogin").style.display = "none";
-                    document.querySelector(".lost").style.display = "none";
-                </script>';
+                echo "<script>
+                    var usr = '$LogUser';
+                    setUser(usr);
+                </script>";
             }
             
             unset($LogUser);
         }
 
-        //Login after Account Registration
-        if(isset($_SESSION['regSuccess'])){
-            if($_SESSION['regSuccess'] == "T"){
+        //Registration Status
+        if(isset($_SESSION['RegStatus'])){
+            $RegStatus = $_SESSION['RegStatus'];
+
+            if($RegStatus == "SuccessT"){
               echo "<script>
               var Alert = document.querySelector('.signupAlert');
               var AlertText = document.querySelector('.alert');
@@ -159,7 +159,7 @@
               AlertText.innerHTML = 'Teacher Registration Successful';
               </script>";
             }
-            else if($_SESSION['regSuccess'] == "S"){
+            else if($RegStatus == "SuccessS"){
               echo "<script>
               var Alert = document.querySelector('.signupAlert');
               var AlertText = document.querySelector('.alert');
@@ -169,41 +169,33 @@
             }
         }
 
-        //Invalid Email/ User Not Found
-        if(isset($LogError)){
+        //Invalid Email/ User Not Found/ Other Errors
+        if(isset($_SESSION['Error'])){
+            $LogError = $_SESSION['Error'];
+
             if($LogError == "Email"){
                 echo "<script>
-                var Alert = document.querySelector('.signupAlert');
-                var AlertText = document.querySelector('.alert');
-                Alert.style.display = 'block';
-                AlertText.innerHTML = 'Invalid Email';
+                    var err = '$LogError';
+                    setError(err);
                 </script>";
             }
 
             if($LogError == "Regno"){
                 echo "<script>
-                var Alert = document.querySelector('.signupAlert');
-                var AlertText = document.querySelector('.alert');
-                Alert.style.display = 'block';
-                AlertText.innerHTML = 'Invalid Registration No';
+                    var err = '$LogError';
+                    setError(err);
                 </script>";
             }
 
             if($LogError == "Password"){
                 echo "<script>
-                var Alert = document.querySelector('.signupAlert');
-                var AlertText = document.querySelector('.alert');
-                Alert.style.display = 'block';
-                AlertText.innerHTML = 'Invalid Password';
+                    var err = '$LogError';
+                    setError(err);
                 </script>";
             }
         }
     ?>
 
-    <?php
-        unset($LogError);
-    ?>
-
-    <!-- <script src="../../js/index.js"></script> -->
+    <!-- <script src="../js/index.js"></script> -->
 </body>
 </html>

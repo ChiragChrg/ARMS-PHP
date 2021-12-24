@@ -21,6 +21,9 @@
     mysqli_query($con,$createTableS);
 
     if(isset($_POST['submitS'])){
+        session_start();
+        $_SESSION['User'] = "Student";
+
         $regno = $_POST['regno'];
         $course = $_POST['course'];
         $fName = $_POST['fNameS'];
@@ -43,9 +46,14 @@
 
         $res = mysqli_query($con,$insertTable);
         if($res){
-            header('Location: ../login/index.php?User=Student&regSuccess=S');
+            $_SESSION['RegStatus'] = "SuccessS";
+            header('Location: ../login/index.php');
+            // header('Location: ../login/index.php?User=Student&regSuccess=S');
         }
-        else
-        header('Location: ./index.php?User=Student&Error=RegError');
+        else{
+            $_SESSION['Error'] = "RegError";
+            header('Location: ./index.php');
+            // header('Location: ./index.php?User=Student&Error=RegError');
+        }
     }
 ?>

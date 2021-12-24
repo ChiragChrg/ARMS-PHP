@@ -71,3 +71,49 @@ var checkTCS = () => {
     RegSubmitS.style.backgroundColor = "grey";
   }
 };
+
+//Set Login User as Teacher
+var setUser = (user) => {
+  if (user === "Teacher") {
+    document.querySelector(".teacherLogin").style.display = "block";
+    document.querySelector(".studentLogin").style.display = "none";
+    document.querySelector(".lost").style.display = "none";
+  } else if (user === "Student") {
+    document.querySelector(".studentLogin").style.display = "block";
+    document.querySelector(".teacherLogin").style.display = "none";
+    document.querySelector(".lost").style.display = "none";
+  }
+};
+
+//Set Signup User as Teacher
+var setSignup = (user) => {
+  if (user === "Teacher") {
+    document.querySelector(".teacherSignup").style.display = "block";
+    document.querySelector(".studentSignup").style.display = "none";
+  } else if (user === "Student") {
+    document.querySelector(".studentSignup").style.display = "block";
+    document.querySelector(".teacherSignup").style.display = "none";
+  }
+};
+
+//Log Errors to Alertbox
+var setError = (error) => {
+  var Alert = document.querySelector(".signupAlert");
+  var AlertText = document.querySelector(".alert");
+  Alert.style.display = "block";
+
+  if (error === "Email") {
+    AlertText.innerHTML = "Invalid Email";
+  }
+  if (error === "Regno") {
+    AlertText.innerHTML = "Invalid Registration No";
+  }
+  if (error === "Password") {
+    AlertText.innerHTML = "Invalid Password";
+  }
+  if (error === "RegError") {
+    AlertText.innerHTML = "Unable to Register User. Try again later.";
+  }
+
+  setTimeout(() => (Alert.style.display = "none"), 3000);
+};
