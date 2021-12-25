@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Student</title>
     <link rel="stylesheet" href="../../css/index.css">
-    <link rel="shortcut icon" href="../../css/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/favicon.svg" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap"
