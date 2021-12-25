@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to ARMS</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" media="(min-width:451px)" href="./css/index.css">
+    <link rel="stylesheet" media="(max-width:450px)" href="./css/Mobile/index.css">
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
     <link
         rel="stylesheet"
@@ -24,15 +25,21 @@
           </div>
         </a>
 
+        <a href="javascript:void(0)" class="openbtn" onclick="openMenu()">
+          <i class="fad fa-bars fa-2x"></i>
+        </a>
+        
         <div class="nav">
           <ul>
             <li>
-              <!-- <a class="active" href="#">Home</a> -->
+              <i class="closebtn fad fa-times-circle fa-2x" onclick="closeMenu()"></i>
+              <a class="active" href="./index.php">Home</a>
               <a href="./about.php">About</a>
               <a href="./contact.php">Contact</a>
             </li>
           </ul>
         </div>
+
       </div>
     </header>
 
