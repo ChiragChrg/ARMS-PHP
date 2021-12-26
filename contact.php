@@ -80,6 +80,6 @@
         </div> -->
         <p>&#169; Copyright 2021 ChiragChrg</p>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/nav.js"></script>
   </body>
 </html>

@@ -5,22 +5,18 @@
   font-family: Quicksand, sans-serif;
 }
 
+html,
 body {
-  overflow: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
+  overflow-x: hidden;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2% 8%;
+  padding: 4% 8%;
   background-color: dodgerblue;
+  transition: visibility 4s ease-in-out;
 }
 
 .header a {
@@ -32,48 +28,70 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   color: #fff;
-}
-.logo p {
-  font-size: 3rem;
+  font-size: 0.8rem;
 }
 
-.openbtn,
-.closebtn {
+.logo p {
   display: none;
+}
+
+.openbtn {
+  color: #fff;
+}
+
+.closebtn {
+  color: dodgerblue;
+  padding: 10% 0;
+}
+
+.nav {
+  display: none;
+  /* visibility: hidden; */
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 
 .nav ul li {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
   list-style: none;
 }
 
 .nav ul li a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-size: 18px;
-  padding: 10px 15px;
+  width: 100%;
+  padding: 12% 2%;
 }
 
 .active {
-  padding-bottom: 2px;
-  border-bottom: 2px solid #fff;
+  color: #fff !important;
+  background-color: dodgerblue;
 }
 
 .signupAlert {
-  display: none;
+  display: block;
 }
 
 .alert {
   display: flex;
   justify-content: center;
-  width: 70%;
-  /* text-align: center; */
   background-color: rgba(30, 143, 255, 0.6);
   margin: 0 15%;
   padding: 1%;
   border-radius: 10px;
   color: #fff;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
 }
@@ -85,7 +103,7 @@ body::-webkit-scrollbar {
   align-items: center;
   text-align: center;
   grid-gap: 40px;
-  row-gap: 40px;
+  row-gap: 20px;
   padding: 2% 8%;
   margin: 1%;
 }
@@ -99,10 +117,11 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4% 6%;
-  margin: 1%;
+  /* padding: 4% 6%; */
+  /* margin: 1%; */
   box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  width: 100%;
 }
 
 .btn {
@@ -123,27 +142,4 @@ body::-webkit-scrollbar {
   color: #fff;
   cursor: pointer;
   outline: none;
-}
-
-.btn a {
-  color: #00acee;
-}
-
-footer {
-  /* border: 5px solid #fff; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 140, 255);
-  padding: 2%;
-  margin-top: -0.5%;
-}
-
-footer p {
-  font-weight: 600;
-  letter-spacing: 1.2px;
-  text-align: center;
-  padding: 2% 0;
-  color: #fff;
 }

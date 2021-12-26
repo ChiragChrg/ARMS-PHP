@@ -9,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Teacher</title>
-    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" media="(min-width:451px)" href="../../css/index.css">
+    <link rel="stylesheet" media="(max-width:450px)" href="../../css/Mobile/index.css">
     <link rel="shortcut icon" href="../../assets/favicon.svg" type="image/x-icon">
 
     <link
@@ -27,10 +28,15 @@
               <p>&nbsp;ARMS</p>
             </div>
           </a>
+
+          <a href="javascript:void(0)" class="openbtn" onclick="openMenu()">
+            <i class="fad fa-bars fa-2x"></i>
+          </a>
         
           <div class="nav">
               <ul>
                 <li>
+                  <i class="closebtn fad fa-times-circle fa-2x" onclick="closeMenu()"></i>
                   <a class="active" href="./index.php">Home</a>
                   <a href="../../contact.php">About</a>
                   <a href="../../login/logout.php">Logout</a>
@@ -39,8 +45,6 @@
           </div>
         </div>
     </header>
-
-
 
     <div class="container" style="height: 60vh;">
     <?php
@@ -54,5 +58,8 @@
     <footer>
       <p>&#169; Copyright 2021 ChiragChrg</p>
     </footer>
+
+    <script src="../../js/nav.js"></script>
+
   </body>
 </html>
