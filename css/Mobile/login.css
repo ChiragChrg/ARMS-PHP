@@ -98,50 +98,107 @@ body {
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
-  margin: 5%;
+  height: 100%;
+  padding: 5% 10%;
 }
 
-.info {
-  text-align: center;
-  padding: 2%;
+.teacherLogin,
+.studentLogin {
+  display: none;
+  margin: 12% 0;
 }
 
-.upfile {
+.card {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 4% 6%;
-  margin: 3% 0;
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.vector {
+  display: none;
+}
+
+.form {
+  /* padding: 20px 40px; */
+  margin: 10px;
+}
+
+.form form {
+  padding: 30px 0;
+}
+
+.logUser,
+.logPass {
+  padding: 2px;
+}
+
+.logUser input,
+.logPass input {
   width: 100%;
-}
-
-.btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-}
-
-.upbtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: dodgerblue;
-  font-size: 16px;
-  padding: 4%;
+  text-align: center;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid grey;
   border-radius: 5px;
+  font-size: 15px;
+}
+
+.logSubmit {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: dodgerblue;
   color: #fff;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.logSubmit:focus {
   outline: none;
 }
 
-.btn a i {
-  color: #00acee;
+.signUp {
+  text-align: center;
+  padding: 20px;
+}
+
+.logSignup {
+  text-decoration: none;
+  color: dodgerblue;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.lost {
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.lost img {
+  width: 300px;
+}
+
+.goback {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.goback a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  background-color: dodgerblue;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 footer {

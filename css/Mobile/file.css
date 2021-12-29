@@ -97,51 +97,37 @@ body {
 }
 
 .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  row-gap: 40px;
+  margin: 3%;
+  padding: 2%;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.subject {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5%;
-}
-
-.info {
-  text-align: center;
-  padding: 2%;
-}
-
-.upfile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4% 6%;
-  margin: 3% 0;
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  width: 100%;
-}
-
-.btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-}
-
-.upbtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: dodgerblue;
-  font-size: 16px;
-  padding: 4%;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
+  padding: 10% 0;
+  transition: 0.4s ease-in-out;
+  color: dodgerblue;
   outline: none;
 }
 
-.btn a i {
-  color: #00acee;
+.subject:hover {
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.35);
+}
+
+.subject p {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 footer {

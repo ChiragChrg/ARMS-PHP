@@ -92,7 +92,7 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: grey;
+  background-color: #ddd;
   text-align: center;
   padding: 1% 10%;
 }
@@ -120,7 +120,7 @@ body::-webkit-scrollbar {
   display: grid;
   justify-content: space-evenly;
   align-items: center;
-  grid-template-columns:33.33% 33.33% 33.33%;
+  grid-template-columns: 33.33% 33.33% 33.33%;
   padding: 1% 2%;
   width: 100%;
 }
@@ -133,13 +133,12 @@ body::-webkit-scrollbar {
   background-color: #fff;
 }
 
-
 .downbtn {
   display: flex;
   justify-content: center;
   text-decoration: none;
   font-size: 18px;
-  background-color: dodgerblue!important;
+  background-color: dodgerblue !important;
   padding: 4% 2%;
   border-radius: 5px;
   color: #fff;

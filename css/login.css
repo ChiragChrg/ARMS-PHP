@@ -143,10 +143,10 @@ body::-webkit-scrollbar {
   outline: none;
 }
 
-.remember {
+/* .remember {
   display: flex;
   align-items: center;
-}
+} */
 
 .signUp {
   text-align: center;
@@ -168,6 +168,10 @@ body::-webkit-scrollbar {
   border-radius: 15px;
   box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.25);
   padding: 20px;
+}
+
+.lost img {
+  width: 500px;
 }
 
 .goback {

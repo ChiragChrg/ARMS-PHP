@@ -11,11 +11,12 @@
       href="https://fonts.googleapis.com/css?family=Quicksand&amp;display=swap"
     />
     <script src="../../../js/icon.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../../css/fileDown.css">
+    <link rel="stylesheet" media="(min-width:451px)" href="../../../css/fileDown.css">
+    <link rel="stylesheet" media="(max-width:450px)" href="../../../css/Mobile/fileDown.css">
     <!-- <script src="//static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script> -->
 
 </head>
-<body>
+<body> 
   <?php
       include('../../../login/connect.php');
     ?>
@@ -27,9 +28,15 @@
                 <p>&nbsp;ARMS</p>
               </div>
             </a>
+
+            <a href="javascript:void(0)" class="openbtn" onclick="openMenu()">
+              <i class="fad fa-bars fa-2x"></i>
+            </a>
+
             <div class="nav">
                 <ul>
                   <li>
+                    <i class="closebtn fad fa-times-circle fa-2x" onclick="closeMenu()"></i>
                     <a href="../index.php">Home</a>
                     <a href="../../../about.php">About</a>
                     <a href="../../../login/logout.php">Logout</a>
@@ -81,7 +88,7 @@
       <p>&#169; Copyright 2021 ChiragChrg</p>
     </footer>
 
-    <!-- <script src="../../../js/file.js"></script> -->
+    <script src="../../../js/nav.js"></script>
     <!-- <script src="../../../js/upload.js"></script> -->
 </body>
 </html>

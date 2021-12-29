@@ -9,7 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARMS Login</title>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" media="(min-width:451px)" href="../css/login.css">
+    <link rel="stylesheet" media="(max-width:450px)" href="../css/Mobile/login.css">
     <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
     <link
       rel="stylesheet"
@@ -27,10 +28,15 @@
                     <p>&nbsp;ARMS</p>
                 </div>
             </a>
+
+            <a href="javascript:void(0)" class="openbtn" onclick="openMenu()">
+                <i class="fad fa-bars fa-2x"></i>
+            </a>
         
             <div class="nav">
                 <ul>
                   <li>
+                    <i class="closebtn fad fa-times-circle fa-2x" onclick="closeMenu()"></i>
                     <a href="../index.php">User</a>
                     <a href="../about.php">About</a>
                     <a href="../contact.php">Contact</a>
@@ -120,7 +126,7 @@
               <h2>Are you Lost ?</h2>
               <a href="../index.php">Go Back</a>
           </div>
-          <img src="../assets/404.png" alt="404" width="500">
+          <img src="../assets/404.png" alt="404">
       </div>
     </div>
 
@@ -197,6 +203,6 @@
         }
     ?>
 
-    <!-- <script src="../js/index.js"></script> -->
+    <script src="../js/nav.js"></script>
 </body>
 </html>

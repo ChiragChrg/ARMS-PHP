@@ -37,17 +37,18 @@ var storeUrl = (Url, Subject) => {
 
 //Display Upload status Alert
 uploadStatus = (status) => {
-  var Alert = document.querySelector('.signupAlert');
-  var AlertText = document.querySelector('.alert');
-  Alert.style.display = 'block';
+  var Alert = document.querySelector(".signupAlert");
+  var AlertText = document.querySelector(".alert");
+  Alert.style.display = "block";
 
-  if(status == "Success"){
-    AlertText.innerHTML = 'File Uploaded Successfully';
+  if (status == "Success") {
+    AlertText.innerHTML = "File Uploaded Successfully";
+  } else if (status == "Error") {
+    AlertText.innerHTML = "File Upload Failed";
   }
-  else if(status == "Error"){
-    AlertText.innerHTML = 'File Upload Failed';
-  }
-}
+
+  setTimeout(() => (Alert.style.display = "none"), 3000); //Error disappears after 3 seconds
+};
 
 //Google Drive Link fetching
 //(Too complicated to impelent with API and stuff So Dropped it)

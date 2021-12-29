@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 
 .openbtn,
 .closebtn {
-  display: none;
+  display: none !important;
 }
 
 .nav ul li {

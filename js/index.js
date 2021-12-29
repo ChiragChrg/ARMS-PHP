@@ -1,14 +1,14 @@
 //Initializing HTML elements to JS variables
-const TeacherLogin = document.getElementById("loginT");
-const StudentLogin = document.getElementById("loginS");
-const LogoT = document.querySelector(".logoT");
-const LogoS = document.querySelector(".logoS");
+var TeacherLogin = document.getElementById("loginT");
+var StudentLogin = document.getElementById("loginS");
+var LogoT = document.querySelector(".logoT");
+var LogoS = document.querySelector(".logoS");
 
-const TCAgreeT = document.querySelector(".TCAgreeT");
-const RegSubmitT = document.querySelector(".RegSubmitT");
+var TCAgreeT = document.querySelector(".TCAgreeT");
+var RegSubmitT = document.querySelector(".RegSubmitT");
 
-const TCAgreeS = document.querySelector(".TCAgreeS");
-const RegSubmitS = document.querySelector(".RegSubmitS");
+var TCAgreeS = document.querySelector(".TCAgreeS");
+var RegSubmitS = document.querySelector(".RegSubmitS");
 
 //if Teacher Passwords dont match, show Alert
 var matchPasswordT = () => {
