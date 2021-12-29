@@ -1,15 +1,15 @@
 <?php
     //000.webhost.com Database
-    // $dbServer = "localhost";
-    // $dbUser = "id18122207_chiragchrg";
-    // $dbPass = "ChrgChirag@4026";
-    // $dbname = "id18122207_arms";
+    $dbServer = "localhost";
+    $dbUser = "id18122207_chiragchrg";
+    $dbPass = "ChrgChirag@4026";
+    $dbname = "id18122207_arms";
 
     //Localhost Database
-    $dbServer = "localhost";
-    $dbUser = "root";
-    $dbPass = "";
-    $dbname = "arms";
+    // $dbServer = "localhost";
+    // $dbUser = "root";
+    // $dbPass = "";
+    // $dbname = "arms";
 
     $con = mysqli_connect($dbServer,$dbUser,$dbPass);
     mysqli_select_db($con,$dbname);
