@@ -42,6 +42,11 @@ body::-webkit-scrollbar {
   font-size: 3rem;
 }
 
+.openbtn,
+.closebtn {
+  display: none !important;
+}
+
 .nav ul li {
   display: flex;
   justify-content: space-between;
