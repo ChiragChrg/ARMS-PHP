@@ -100,6 +100,14 @@ body::-webkit-scrollbar {
   /* transition: 5s ease-in-out; */
 }
 
+.downdfilebtn {
+  text-decoration: none;
+  color: #fff;
+  background-color: dodgerblue;
+  padding: 2% 4%;
+  border-radius: 5px;
+}
+
 .card {
   /* background-color: rgb(0, 140, 255); */
   padding: 6% 10%;

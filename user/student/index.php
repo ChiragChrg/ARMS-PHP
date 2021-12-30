@@ -52,7 +52,7 @@
         echo "<p>Your Reg No is ".$RegNo."</p>";
       ?>
 
-      <a href="./download/index.php">Downlaod Files</a>
+      <a class="downdfilebtn" href="./download/index.php">Downlaod Files</a>
     </div>
 
     <footer>
