@@ -52,7 +52,7 @@
     echo "<p>Welcome, ".$Username."</p>";
     ?>
 
-    <a href="./upload/index.php">Upload Files</a>
+    <a class="upfilebtn" href="./upload/index.php">Upload Files</a>
     </div>
 
     <footer>
