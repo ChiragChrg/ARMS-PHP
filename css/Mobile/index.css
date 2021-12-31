@@ -106,6 +106,14 @@ body {
   margin: 20% 0 35% 0;
 }
 
+.upfilebtn {
+  text-decoration: none;
+  color: #fff;
+  background-color: dodgerblue;
+  padding: 2% 4%;
+  border-radius: 5px;
+}
+
 .downdfilebtn {
   text-decoration: none;
   color: #fff;
