@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    // Checking if Session exists incase user tries to 
+    // access the page directly without logging in
+    if(isset($_SESSION['name'])){
+      $Username = $_SESSION['name'];
+      $RegNo = $_SESSION['regno'];
+    }
+    else {
+      // Redirect page to Lost 404
+      header("Location: ../../index.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,7 +104,7 @@
       <a href="./cns.php">
         <div class="subject">
           <i class="fas fa-folder fa-5x"></i>
-          <p>Cloud Network Security</p>
+          <p>Cryptography and Network Security</p>
         </div>
       </a>
     </div>
@@ -100,7 +113,7 @@
       <p>&#169; Copyright 2021 ChiragChrg</p>
     </footer>
 
-    <!-- <script src="../../../js/file.js"></script> -->
+    <script src="../../../js/nav.js"></script>
     <!-- <script src="../../../js/upload.js"></script> -->
 </body>
 </html>
