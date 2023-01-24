@@ -1,0 +1,50 @@
+[
+{"type":"header","version":"4.9.5","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"id18122207_arms"},
+{"type":"table","name":"docs","database":"id18122207_arms","data":
+[
+{"id":"0RXt3C5aNhR99sg5","url":"https:\/\/cdn.filestackcontent.com\/cwfbz5XcSbWvognLrrJ0","name":"Ad.JAVA Unit 3 Notes.pdf","size":"378 KB","subject":"Ad.JAVA"},
+{"id":"1mKlhgLB8IW46o3Q","url":"https:\/\/cdn.filestackcontent.com\/63p6tz0PRx2lhACtC5Bt","name":"SE Reference-5.pdf","size":"5.04 MB","subject":"SE"},
+{"id":"2q8E7uA5PETjeBTH","url":"https:\/\/cdn.filestackcontent.com\/sMCprDrR2mIfGfjSWFmA","name":"Lamp Technology V sem B.C.A.pdf","size":"4.52 MB","subject":"LAMP"},
+{"id":"49KafFq9yA8HRrh9","url":"https:\/\/cdn.filestackcontent.com\/SppHNXmhSty1w2zMGkjm","name":"lamp final 5 th sem notes.pdf","size":"966 KB","subject":"LAMP"},
+{"id":"627ny72F8jgDx1d4","url":"https:\/\/cdn.filestackcontent.com\/VRLA7XQMiDBnGsEkSORQ","name":"SE PPT.pdf","size":"2.33 MB","subject":"SE"},
+{"id":"961BcjuT287Xr0Ik","url":"https:\/\/cdn.filestackcontent.com\/lOFZcXljSkuai7mjuOF8","name":"Ad.JAVA Question Bank with Answers.pdf","size":"2.09 MB","subject":"Ad.JAVA"},
+{"id":"a23NbLEx6lg18cvj","url":"https:\/\/cdn.filestackcontent.com\/u7IPCP2XTbiZoQeGySB3","name":"WCNunit1_2.pdf","size":"1.54 MB","subject":"WCN"},
+{"id":"b27582Fcp4WV4KWQ","url":"https:\/\/cdn.filestackcontent.com\/xssar35SYCr39sxC1F9w","name":"SE Reference-2.pdf","size":"4.22 MB","subject":"SE"},
+{"id":"Ca97160wNJQUu3DA","url":"https:\/\/cdn.filestackcontent.com\/jEvT79ndS1aHOqtEzrhh","name":"Wireless Communications Notes - 2019.docx.pdf","size":"3.21 MB","subject":"WCN"},
+{"id":"fPTH84wm8vB1deu6","url":"https:\/\/cdn.filestackcontent.com\/ByFL7ffTTNu9nbrdm4QJ","name":"Ad.JAVA LAB.pdf","size":"598 KB","subject":"Ad.JAVA"},
+{"id":"jBqad5n3tBdl20m9","url":"https:\/\/cdn.filestackcontent.com\/kSXM7N9mQReNEP0kXzJn","name":"Cloud Computing PPT.pdf","size":"7.9 MB","subject":"CC"},
+{"id":"MW0EfoFDq3We4uJW","url":"https:\/\/cdn.filestackcontent.com\/y95xzcjCRlemYjBsbXHC","name":"Ad.JAVA Question Bank.pdf","size":"450 KB","subject":"Ad.JAVA"},
+{"id":"n356cOHnXTtZnYXn","url":"https:\/\/cdn.filestackcontent.com\/v5ohU1l1SemnNQgO1E3A","name":"SE Reference-4.pdf","size":"6.1 MB","subject":"SE"},
+{"id":"qqfWKi9fU68NNgpB","url":"https:\/\/cdn.filestackcontent.com\/Mffy0i02TYOLrropFSVu","name":"Cloud Computing Question Bank with Answers.pdf","size":"1.5 MB","subject":"CC"},
+{"id":"QRv4qY8D248QeltR","url":"https:\/\/cdn.filestackcontent.com\/CJGM7dcCSfmIwhAcYRnQ","name":"Ad.JAVA Unit 5 Notes.pdf","size":"576 KB","subject":"Ad.JAVA"},
+{"id":"s6v2e590bA2lp0T4","url":"https:\/\/cdn.filestackcontent.com\/pxkMK7bARACsyHAcNLC5","name":"Cloud_Computing Revised Study Material (2021 - 22).pdf","size":"9.04 MB","subject":"CC"},
+{"id":"T0960uh2PW1X66wj","url":"https:\/\/cdn.filestackcontent.com\/aUkHoAiRyuI1nbe59LXj","name":"SE Reference-5 PPT.pdf","size":"6.7 MB","subject":"SE"},
+{"id":"Tc0TDKwVJX9zzi2g","url":"https:\/\/cdn.filestackcontent.com\/1V31SkkQHemTPQJxFGZD","name":"SE Notes.pdf","size":"2.21 MB","subject":"SE"},
+{"id":"UDBPPrcy92qn4OFx","url":"https:\/\/cdn.filestackcontent.com\/OutzaMfrQDeozTnIMDQH","name":"Ad.JAVA Unit 4 Notes.pdf","size":"531 KB","subject":"Ad.JAVA"},
+{"id":"vON52nqjDdUzN040","url":"https:\/\/cdn.filestackcontent.com\/sHsIJekdRAy2lymAboF7","name":"SE Reference-3.pdf","size":"11.97 MB","subject":"SE"},
+{"id":"x6ixEpBeABGQ1x5K","url":"https:\/\/cdn.filestackcontent.com\/9SxTGalThSj5FlxrQvCw","name":"SE Reference-1.pdf","size":"9.07 MB","subject":"SE"},
+{"id":"XgTAUD3rvL1YQlKO","url":"https:\/\/cdn.filestackcontent.com\/SRMiDhYmRkKGvFPt0Y3W","name":"LAMP Part-B Lab Programs.pdf","size":"180 KB","subject":"LAMP"},
+{"id":"yimDPMp33QYc3zo9","url":"https:\/\/cdn.filestackcontent.com\/mbHy5005Q1cYUXay5baF","name":"Cloud Computing Question Bank with Answers (2021 - 22).pdf","size":"1.15 MB","subject":"CC"},
+{"id":"YVKB49cnU5Ir6f33","url":"https:\/\/cdn.filestackcontent.com\/wWzdeGQdWTCSc9tzKfQi","name":"SE Question Bank.pdf","size":"1.58 MB","subject":"SE"}
+]
+}
+,{"type":"table","name":"student","database":"id18122207_arms","data":
+[
+{"regno":"33333","course":"BCA","fname":"yasser","lname":"dz","gender":"Male","dob":"2022-01-28","email":"yass@dz.ru","password":"8a05ef5900cc559e0e00e3d98b0d40cb"},
+{"regno":"3SU19SA011","course":"BCA","fname":"Chirag","lname":"","gender":"Male","dob":"2001-10-03","email":"chiruchirag2001@gmail.com","password":"827ccb0eea8a706c4c34a16891f84e7b"},
+{"regno":"3SU19SA044","course":"BCA","fname":"Nishan","lname":"Bangera","gender":"Male","dob":"2021-12-20","email":"nishanbangera135@gmail.com","password":"63f3b26ba6b5b900a4d040354bcbe767"},
+{"regno":"3SU19SA052","course":"BCA","fname":"Rajath","lname":"","gender":"Male","dob":"2021-12-21","email":"rajathgatty001@gmail.com","password":"e10adc3949ba59abbe56e057f20f883e"},
+{"regno":"3SU19SA062","course":"BCA","fname":"Jeevan","lname":"Kumar","gender":"Male","dob":"2001-10-23","email":"naveej62@gmail.com","password":"827ccb0eea8a706c4c34a16891f84e7b"}
+]
+}
+,{"type":"table","name":"teacher","database":"id18122207_arms","data":
+[
+{"id":"1","fname":"Teacher","lname":"Chirag","gender":"Male","dob":"2012-12-12","email":"Teacher@gmail.com","password":"827ccb0eea8a706c4c34a16891f84e7b"},
+{"id":"3","fname":"Rajath","lname":"Gatty","gender":"Male","dob":"2021-12-21","email":"rajathgatty@gmail.com","password":"827ccb0eea8a706c4c34a16891f84e7b"},
+{"id":"4","fname":"Awais","lname":"A","gender":"Male","dob":"1999-09-20","email":"foxstot@gmail.com","password":"827ccb0eea8a706c4c34a16891f84e7b"},
+{"id":"5","fname":"Rajath","lname":"","gender":"Male","dob":"2021-12-21","email":"rajathgatty001@gmail.com","password":"e10adc3949ba59abbe56e057f20f883e"},
+{"id":"6","fname":"Shannon","lname":"Levine","gender":"Male","dob":"2021-12-26","email":"adad@gg.com","password":"8a05ef5900cc559e0e00e3d98b0d40cb"}
+]
+}
+]
