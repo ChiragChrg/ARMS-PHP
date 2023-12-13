@@ -2,7 +2,7 @@
     //000.webhost.com Database
     $dbServer = "localhost";
     $dbUser = "id18122207_chiragchrg";
-    $dbPass = "ChrgChirag@4026";
+    $dbPass = "your_password";
     $dbname = "id18122207_arms";
 
     //Localhost Database
