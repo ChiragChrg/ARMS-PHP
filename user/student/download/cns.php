@@ -22,7 +22,7 @@
     ?>
     <header>
         <div class="header">
-            <a href="https://sims-arms.000webhostapp.com/">
+            <a href="http://arms-v1.infinityfreeapp.com/">
               <div class="logo">
                 <i class="fad fa-user-graduate fa-3x"></i>
                 <p>&nbsp;ARMS</p>
